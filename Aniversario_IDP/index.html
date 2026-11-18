@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aniversario IDP</title>
+
+    <link rel="stylesheet" href="portada.css">
+
+</head>
+
+<body>
+
+    <main class="portada">
+
+        <!-- FONDO -->
+        <img src="fondo6.png"
+             class="fondo"
+             alt="Fondo de aniversario">
+
+        <!-- LOGOTIPO CLICABLE -->
+        <a href="programa.html" class="logo-enlace">
+
+            <img src="40 ANIVER.png"
+                 alt="Logotipo Iglesia de Dios de la Profecía">
+
+        </a>
+
+        <!-- FRASE DE LA PORTADA -->
+        <div class="frase-portada">
+            "JESÚS REY DE REYES"
+        </div>
+
+        <!-- TRANSICIÓN -->
+        <div class="transicion"></div>
+
+    </main>
+
+    <!-- TRANSICIÓN AL PROGRAMA -->
+    <script>
+
+        const logo = document.querySelector(".logo-enlace");
+
+        logo.addEventListener("click", function(event) {
+
+            event.preventDefault();
+
+            const destino = this.href;
+
+            document.body.classList.add("salida");
+
+            setTimeout(function() {
+                window.location.href = destino;
+            }, 600);
+
+        });
+
+    </script>
+
+</body>
+</html>

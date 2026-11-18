@@ -1,0 +1,722 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40 Aniversario - IDP</title>
+    <link rel="stylesheet" href="programa.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+    <img src="40 ANIVER.png" alt="Logotipo IDP" class="logo">
+    <div class="titulo">
+        <h1>40 ANIVERSARIO</h1>
+        <p>IGLESIA DE DIOS DE LA PROFECÍA</p>
+        <span>Jesús, Rey de Reyes</span>
+    </div>
+</header>
+
+<nav class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#historia">Nuestra historia</a>
+    <a href="#programa">Programa</a>
+    <a href="#galeria">Galería</a>
+</nav>
+
+<main>
+
+<section id="inicio" class="bienvenida">
+    <h2>¡Celebramos 40 años de bendición!</h2>
+    <p>
+        Cuatro décadas de fe, amor y servicio a Dios.
+        Recordamos nuestro pasado y celebramos lo que Dios
+        seguirá haciendo en nuestras vidas.
+    </p>
+</section>
+
+
+
+<section id="historia" class="seccion">
+
+    <h2>Nuestra historia</h2>
+    <div class="linea-dorada"></div>
+
+    <p class="descripcion-programa">
+        40 años de fe, servicio y fidelidad de Dios.
+        Recordamos nuestros inicios y honramos a quienes
+        fueron parte de esta hermosa historia.
+    </p>
+
+    <!-- TARJETAS DE HISTORIA -->
+    <div id="tarjetasHistoria" class="contenedor-fechas">
+
+        <article class="tarjeta-evento">
+            <span class="fecha">1986</span>
+            <div class="detalle-evento">
+                <span class="dia">DOCUMENTO HISTÓRICO · 01</span>
+                <h3>Acta de organización</h3>
+                <button onclick="mostrarHistoria('acta')">Ver documento</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">40<br>AÑOS</span>
+            <div class="detalle-evento">
+                <span class="dia">MEMORIA INSTITUCIONAL · 02</span>
+                <h3>Pastores de nuestros 40 años</h3>
+                <button onclick="mostrarHistoria('pastores')">Ver lista</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento especial">
+            <span class="fecha">2026</span>
+            <div class="detalle-evento">
+                <span class="dia">CELEBRACIÓN ESPECIAL · 03</span>
+                <h3>Invitación por los 40 años</h3>
+                <button onclick="mostrarHistoria('invitacion')">Leer invitación</button>
+            </div>
+        </article>
+
+    </div>
+
+    <!-- DOCUMENTO 1: ACTA -->
+    <div id="historia-acta" class="detalle-historia" hidden>
+
+        <article class="documento-historia">
+
+            <span class="numero-documento">DOCUMENTO HISTÓRICO · 01</span>
+            <h3>Acta de Organización</h3>
+            <h4>IGLESIA DE DIOS DE LA PROFECÍA VINTO</h4>
+
+            <p>
+                El 23 de noviembre de 1986, a horas 17:00, en la ciudad de
+                Oruro, en el domicilio ubicado en la Av. Alejandro Urquidi
+                y calle Tupac Katari, se reunieron el Hno. Clemente Rosales
+                y los hermanos asistentes, con el propósito de organizar
+                una nueva congregación bajo el nombre de
+                <strong>Iglesia de Dios de la Profecía en Vinto</strong>.
+            </p>
+
+            <p>
+                En esta reunión se manifestó la voluntad de formar parte
+                de la Iglesia de Dios de la Profecía en Bolivia, aceptando
+                sus estatutos, principios y disposiciones.
+            </p>
+
+            <p>
+                La sesión fue dirigida por el ministro Obpo. Alberto García,
+                quien compartió las enseñanzas fundamentales de la Biblia
+                y explicó aspectos importantes sobre el gobierno teocrático,
+                el pacto y la bandera de la Iglesia. Posteriormente, el
+                Obispo ministró el pacto de membresía a los asistentes y
+                declaró oficialmente organizada la Iglesia de Dios de la
+                Profecía Vinto.
+            </p>
+
+            <p>
+                Asimismo, se estableció el programa de cultos tomando como
+                fundamento la obediencia a Dios, la adoración, la oración
+                y la evangelización. En esta ocasión también fue posesionado
+                como pastor local el Hno. Clemente Rosales.
+            </p>
+
+            <p>
+                Finalmente, la reunión concluyó con una porción bíblica y
+                una oración de acción de gracias a Dios por el inicio de
+                esta obra en la comunidad de Vinto.
+            </p>
+
+            <h4 class="subtitulo-historia">MIEMBROS DE LA NUEVA IGLESIA</h4>
+
+            <p><strong>Pastor local:</strong> Hno. Clemente Rosales.</p>
+            <p><strong>Miembros recibidos:</strong></p>
+
+            <ul class="lista-historica">
+                <li>Hno. Máximo Misericordia.</li>
+                <li>Hna. Flora Fernández.</li>
+            </ul>
+
+            <p>
+                <strong>
+                    Miembros recibidos mediante traslado de la Iglesia
+                    de Dios en Santa Fe:
+                </strong>
+            </p>
+
+            <ul class="lista-historica">
+                <li>Hno. Jorge Flores.</li>
+                <li>Hna. Leandra de Flores.</li>
+                <li>Hna. Fabiana Flores.</li>
+                <li>Hna. Filomena Flores.</li>
+                <li>Hna. Judith Flores.</li>
+                <li>Hno. Dionicio Colque.</li>
+                <li>Hna. Basilia Cayo de Colque.</li>
+                <li>Hna. Juana Cayo, Vda. de Ticona.</li>
+                <li>Hna. Florencia Huayllata, Vda. de Flores.</li>
+            </ul>
+
+            <p class="nota-historica">
+                Al pie de esta acta firman el Hno. Clemente Rosales
+                y el moderador, Ob. Alberto García.
+            </p>
+
+            <p class="fecha-historica">
+                Vinto - Oruro, 23 de noviembre de 1986.
+            </p>
+
+        </article>
+
+        <button class="volver" onclick="mostrarListaHistoria()">
+            Volver a la historia
+        </button>
+    </div>
+
+    <!-- DOCUMENTO 2: PASTORES -->
+    <div id="historia-pastores" class="detalle-historia" hidden>
+
+        <article class="documento-historia">
+
+            <span class="numero-documento">MEMORIA INSTITUCIONAL · 02</span>
+            <h3>Pastores de nuestros 40 años</h3>
+
+            <h4>
+                NÓMINA DE PASTORES QUE FORMARON PARTE DE LOS
+                40 AÑOS DE HISTORIA Y MINISTERIO
+            </h4>
+
+            <p>
+                A lo largo de la trayectoria de la Iglesia de Dios de la
+                Profecía Vinto, los siguientes pastores han dedicado su
+                tiempo, esfuerzo y compromiso al servicio de Dios,
+                guiando espiritualmente a la congregación:
+            </p>
+
+            <ul class="lista-historica lista-pastores">
+                <li>Pastor Clemente Rosales</li>
+                <li>Pastor Waldo Escalante</li>
+                <li>Pastor Félix Vargas</li>
+                <li>Pastora Gregoria Achocalla</li>
+                <li>Pastor Luis Fulguera</li>
+                <li>Pastor Raúl Bahoz</li>
+                <li>Pastor Luis Quispe</li>
+                <li>Pastor Antonio Coaquira</li>
+                <li>Pastor Francisco Espinoza</li>
+                <li>Pastor Víctor O. León</li>
+                <li>Pastor Anacleto Jacinto</li>
+            </ul>
+
+            <div class="pastor-actual">
+                <span>PASTOR ACTUAL</span>
+                <h4>César Flores</h4>
+            </div>
+
+            <p>
+                Expresamos nuestro profundo agradecimiento a cada uno
+                de ellos por su entrega y dedicación. Sus vidas y
+                ministerios forman parte de esta hermosa historia de
+                40 años, en la que Dios ha demostrado su fidelidad y
+                amor hacia nuestra congregación.
+            </p>
+
+        </article>
+
+        <button class="volver" onclick="mostrarListaHistoria()">
+            Volver a la historia
+        </button>
+    </div>
+
+    <!-- DOCUMENTO 3: INVITACIÓN -->
+    <div id="historia-invitacion" class="detalle-historia" hidden>
+
+        <article class="documento-historia">
+
+            <span class="numero-documento">CELEBRACIÓN ESPECIAL · 03</span>
+            <h3>Invitación por los 40 años</h3>
+            <h4>INVITACIÓN</h4>
+
+            <p class="saludo-invitacion">Paz y gozo en el Señor.</p>
+
+            <p>
+                Reciban un fraternal saludo en el amor de nuestro
+                Señor Jesucristo.
+            </p>
+
+            <p>
+                Con mucha alegría y gratitud a Dios, tenemos el honor
+                de invitarles a participar de las diferentes actividades
+                programadas en conmemoración de los
+                <strong>
+                    40 años de aniversario de nuestra amada Iglesia de
+                    Dios de la Profecía Vinto.
+                </strong>
+            </p>
+
+            <p>
+                Durante estas cuatro décadas, Dios ha sido fiel y nos
+                ha permitido crecer, permanecer firmes en la fe y
+                continuar sirviendo a nuestra comunidad. Por ello,
+                queremos compartir este tiempo especial, recordando
+                con gratitud a quienes fueron parte de esta hermosa
+                historia y celebrando juntos las bendiciones que el
+                Señor nos ha concedido.
+            </p>
+
+            <p>
+                Será una alegría contar con su presencia y celebrar
+                unidos esta fecha tan significativa para nuestra
+                congregación.
+            </p>
+
+            <p class="agradecimiento-invitacion">
+                Damos gracias a Dios por estos 40 años de fidelidad,
+                servicio y bendición.
+            </p>
+
+            <p class="fecha-historica">
+                Vinto - Oruro, noviembre de 2026.
+            </p>
+
+        </article>
+
+        <button class="volver" onclick="mostrarListaHistoria()">
+            Volver a la historia
+        </button>
+    </div>
+
+</section>
+
+<section id="programa" class="seccion">
+    <h2>Programa de actividades</h2>
+    <div class="linea-dorada"></div>
+
+    <p class="descripcion-programa">
+        Acompáñanos en esta celebración especial.
+        Selecciona una fecha para conocer su programa.
+    </p>
+
+    <!-- TARJETAS DE LOS 12 PROGRAMAS -->
+    <div id="lista-programas" class="contenedor-fechas">
+
+        <article class="tarjeta-evento">
+            <span class="fecha">20 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">VIERNES</span>
+                <h3>Inauguración</h3>
+                <button onclick="mostrarPrograma('p20')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">21 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">SÁBADO</span>
+                <h3>Pandero</h3>
+                <button onclick="mostrarPrograma('p21')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">22 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">DOMINGO</span>
+                <h3>Tarde de Jetro</h3>
+                <button onclick="mostrarPrograma('p22t')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">22 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">DOMINGO</span>
+                <h3>Noche de Alabanza</h3>
+                <button onclick="mostrarPrograma('p22n')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">23 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">LUNES</span>
+                <h3>Programa de Niños</h3>
+                <button onclick="mostrarPrograma('p23')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">24 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">MARTES</span>
+                <h3>Programa de Damas</h3>
+                <button onclick="mostrarPrograma('p24')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">25 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">MIÉRCOLES</span>
+                <h3>Programa de Quechua</h3>
+                <button onclick="mostrarPrograma('p25')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">26 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">JUEVES</span>
+                <h3>Programa de Caballeros</h3>
+                <button onclick="mostrarPrograma('p26')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento">
+            <span class="fecha">27 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">VIERNES</span>
+                <h3>Programa de Jóvenes</h3>
+                <button onclick="mostrarPrograma('p27')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento especial">
+            <span class="fecha">28 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">SÁBADO · TARDE</span>
+                <h3>Acto Central – Primera parte</h3>
+                <button onclick="mostrarPrograma('p28t')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento especial">
+            <span class="fecha">28 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">SÁBADO · NOCHE</span>
+                <h3>Acto Central – Segunda parte</h3>
+                <button onclick="mostrarPrograma('p28n')">Ver programa</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-evento especial">
+            <span class="fecha">29 NOV</span>
+            <div class="detalle-evento">
+                <span class="dia">DOMINGO</span>
+                <h3>Clausura</h3>
+                <button onclick="mostrarPrograma('p29')">Ver programa</button>
+            </div>
+        </article>
+
+    </div>
+
+    <!-- DETALLE: 20 DE NOVIEMBRE -->
+    <div id="p20" class="detalle-programa" hidden>
+        <h3>20 de noviembre – Inauguración</h3>
+        <p class="moderador">Moderador: Jaime Paredes</p>
+
+        <ol class="lista-horarios">
+            <li><span>19:00</span> Oración inicial – Pastor César Flores</li>
+            <li><span>19:10</span> Música por la banda – Melodías de Cristo</li>
+            <li><span>19:40</span> Corte de cinta y recorrido por el lugar</li>
+            <li><span>19:45</span> Himno al Estado Plurinacional de Bolivia</li>
+            <li><span>19:50</span> Alabanza y adoración – Min. 70v7 Eco del Cielo</li>
+            <li><span>20:10</span> Lectura bíblica – Hno. Guido Mamani</li>
+            <li><span>20:40</span> Alabanza y adoración – Min. 70v7 Eco del Cielo</li>
+            <li><span>20:50</span> Prédica – Obispo David Orozco</li>
+            <li><span>21:50</span> Confraternización (cena)</li>
+            <li><span>22:15</span> Oración final y despedida – Hno. Jaime Paredes</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 21 DE NOVIEMBRE -->
+    <div id="p21" class="detalle-programa" hidden>
+        <h3>21 de noviembre – Pandero</h3>
+        <p class="moderador">Moderadora: Jhuliza Espinoza</p>
+
+        <ol class="lista-horarios">
+            <li><span>18:00</span> Oración inicial – Hna. Daniela</li>
+            <li><span>18:10</span> Alabanza – Min. 70v7 Eco del Cielo</li>
+            <li><span>18:25</span> Lectura bíblica – Hna. Jessica Gutiérrez</li>
+            <li><span>18:30</span> Alabanza – Min. 70v7 Eco del Cielo</li>
+            <li><span>18:40</span> Prédica – Pastor César Flores</li>
+            <li><span>19:45</span> Ofrendas – Hna. Flora Antonio y Nilda Mendoza</li>
+            <li><span>20:00</span> Número especial – Rosa de Sharon y Lirio de los Valles</li>
+            <li><span>20:15</span> Oración por el Ministerio de Panderos de Vinto</li>
+            <li><span>20:30</span> Alabanza – Min. 70v7 Eco del Cielo</li>
+            <li><span>20:55</span> Oración por el refrigerio – Hna. Ruth</li>
+            <li><span>21:00</span> Números especiales invitados</li>
+            <li><span>21:30</span> Oración final – Hna. Tamara López</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 22 DE NOVIEMBRE TARDE -->
+    <div id="p22t" class="detalle-programa" hidden>
+        <h3>22 de noviembre – Tarde de Jetro</h3>
+        <p class="moderador">Moderadora: Hna. Gimena</p>
+
+        <ol class="lista-horarios">
+            <li><span>14:15</span> Oración inicial – Wilma Choque</li>
+            <li><span>14:30</span> Alabanza – Ministerio invitado</li>
+            <li><span>14:45</span> Lectura bíblica – Joel</li>
+            <li><span>15:00</span> Alabanza – Ministerio invitado</li>
+            <li><span>15:20</span> Mensaje: Fe y salvación en la familia</li>
+            <li><span>16:00</span> Ofrendas – Hnas. Ruth y Rosmery</li>
+            <li><span>16:20</span> Números especiales</li>
+            <li><span>16:30</span> Refrigerio</li>
+            <li><span>17:00</span> Concurso de tips de la familia</li>
+            <li><span>17:30</span> Oración final – Hna. Jimena Jacinto</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 22 DE NOVIEMBRE NOCHE -->
+    <div id="p22n" class="detalle-programa" hidden>
+        <h3>22 de noviembre – Noche de Alabanza</h3>
+        <p class="moderador">Moderador: Franz López</p>
+
+        <ol class="lista-horarios">
+            <li><span>19:00</span> Oración inicial – Franz López</li>
+            <li><span>19:15</span> Alabanza – Min. Promesa de Dios</li>
+            <li><span>19:30</span> Lectura bíblica – Jaime Paredes</li>
+            <li><span>19:40</span> Alabanza – Min. Promesa de Dios</li>
+            <li><span>20:00</span> Prédica – Pastor César Flores</li>
+            <li><span>20:50</span> Ofrendas – Hno. Abraham V. C.</li>
+            <li><span>21:00</span> Número especial – Min. Hijos del Rey</li>
+            <li><span>21:10</span> Refrigerio</li>
+            <li><span>21:30</span> Oración final</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 23 DE NOVIEMBRE -->
+    <div id="p23" class="detalle-programa" hidden>
+        <h3>23 de noviembre – Programa de Niños</h3>
+        <p class="moderador">Moderadora: Jhulisa Espinoza</p>
+
+        <ol class="lista-horarios">
+            <li><span>19:00</span> Oración y alabanza – Min. Shekina</li>
+            <li><span>20:00</span> Enseñanza – Hna. América Orellana</li>
+            <li><span>21:00</span> Enseñanza sobre las ofrendas – Hna. Nilda Mendoza</li>
+            <li><span>21:15</span> Números especiales</li>
+            <li><span>21:15</span> Refrigerio</li>
+            <li><span>21:30</span> Oración final</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 24 DE NOVIEMBRE -->
+    <div id="p24" class="detalle-programa" hidden>
+        <h3>24 de noviembre – Programa de Damas</h3>
+        <p class="moderador">Moderadora: Elizabeth Álvarez</p>
+
+        <ol class="lista-horarios">
+            <li><span>19:15</span> Oración inicial – Zulma Martínez</li>
+            <li><span>19:30</span> Alabanza – Min. Gracia Viva</li>
+            <li><span>19:50</span> Lectura bíblica – Jimena Jacinto</li>
+            <li><span>20:10</span> Cine: Mujer Sabrá</li>
+            <li><span>21:10</span> Pequeña reflexión sobre el video – Pastor César Flores</li>
+            <li><span>21:30</span> Ofrendas – Silvia Espinoza y Jhovana Cruz</li>
+            <li><span>21:45</span> Refrigerio</li>
+            <li><span>21:45</span> Números especiales</li>
+            <li><span>21:50</span> Oración final – Zulma Martínez</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 25 DE NOVIEMBRE -->
+    <div id="p25" class="detalle-programa" hidden>
+        <h3>25 de noviembre – Programa de Quechua</h3>
+        <p class="moderador">Moderadora: Ylda Paredes</p>
+
+        <ol class="lista-horarios">
+            <li><span>19:00</span> Oración inicial – Ylda Paredes</li>
+            <li><span>19:15</span> Alabanza – Min. Gracia Viva</li>
+            <li><span>19:40</span> Lectura bíblica – Hna. Fortunata Coca</li>
+            <li><span>19:50</span> Alabanza – Min. Gracia Viva</li>
+            <li><span>20:00</span> Prédica – Pastor Sergio Rojas</li>
+            <li><span>20:50</span> Ofrendas – Hna. María López</li>
+            <li><span>21:00</span> Sorteo de rifas</li>
+            <li><span>21:20</span> Número especial</li>
+            <li><span>21:40</span> Refrigerio</li>
+            <li><span>21:50</span> Sorteo de rifas</li>
+            <li><span>22:00</span> Oración final</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 26 DE NOVIEMBRE -->
+    <div id="p26" class="detalle-programa" hidden>
+        <h3>26 de noviembre – Programa de Caballeros</h3>
+        <p class="moderador">Moderador: Abel León</p>
+
+        <ol class="lista-horarios">
+            <li><span>19:00</span> Oración inicial – Abel León</li>
+            <li><span>19:15</span> Alabanza – Min. Promesa de Dios</li>
+            <li><span>19:30</span> Lectura bíblica – Hno. Alfredo Llave</li>
+            <li><span>19:40</span> Alabanza – Min. Promesa de Dios</li>
+            <li><span>20:00</span> Prédica – Pastor Iver Roque Gutiérrez</li>
+            <li><span>20:50</span> Ofrendas – Julio Chirilla</li>
+            <li><span>21:00</span> Número especial – Hombres de Valor</li>
+            <li><span>21:10</span> Refrigerio</li>
+            <li><span>21:10</span> Números especiales</li>
+            <li><span>21:40</span> Oración final</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 27 DE NOVIEMBRE -->
+    <div id="p27" class="detalle-programa" hidden>
+        <h3>27 de noviembre – Programa de Jóvenes</h3>
+        <p class="moderador">Moderador: Dilan Cruz</p>
+
+        <ol class="lista-horarios">
+            <li><span>19:25</span> Oración inicial – Dilan Cruz</li>
+            <li><span>19:30 – 20:20</span> Alabanza – Min. 70v7 Eco del Cielo</li>
+            <li><span>20:25 – 21:10</span> Prédica – Hno. Josué Beltrán</li>
+            <li><span>21:10 – 21:20</span> Ofrendas – Marco y Jessica</li>
+            <li><span>21:20 – 21:40</span> Números especiales</li>
+            <li><span>21:40 – 22:00</span> Refrigerio</li>
+            <li><span>22:00</span> Oración final</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 28 DE NOVIEMBRE TARDE -->
+    <div id="p28t" class="detalle-programa" hidden>
+        <h3>28 de noviembre – Acto Central (Tarde)</h3>
+        <p class="moderador">Moderadora: Elizabeth Álvarez</p>
+
+        <ol class="lista-horarios">
+            <li><span>14:00</span> Oración inicial – Elizabeth</li>
+            <li><span>14:15</span> Alabanza – Min. Gracia Sublime</li>
+            <li><span>14:40</span> Lectura bíblica – Hna. Wilma Tabuada</li>
+            <li><span>14:50</span> Alabanza – Min. Gracia Sublime</li>
+            <li><span>15:00</span> Prédica – Obispo Teófilo Aguilar</li>
+            <li><span>15:50</span> Ofrendas – Maribel Mendoza</li>
+            <li><span>16:20</span> Números especiales</li>
+            <li><span>17:00</span> Bautizo en agua</li>
+            <li><span>18:00</span> Oración final</li>
+            <li><span>18:10</span> Cena</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 28 DE NOVIEMBRE NOCHE -->
+    <div id="p28n" class="detalle-programa" hidden>
+        <h3>28 de noviembre – Acto Central (Noche)</h3>
+        <p class="moderador">Moderador: Hno. Abel León</p>
+
+        <ol class="lista-horarios">
+            <li><span>19:00</span> Oración inicial – Hno. Abel León</li>
+            <li><span>19:15</span> Alabanza – Min. Promesa de Dios</li>
+            <li><span>19:40</span> Lectura bíblica – Hna. Ruth Espinoza</li>
+            <li><span>19:50</span> Alabanza – Min. Promesa de Dios</li>
+            <li><span>20:00</span> Prédica – Obispo Martín Mamani</li>
+            <li><span>20:50</span> Ofrendas – Maribel Mendoza</li>
+        </ol>
+
+        <h4 class="subtitulo-programa">Segunda parte – Acto central</h4>
+
+        <ol class="lista-horarios" start="7">
+            <li><span>21:00</span> Acto central (cintas)</li>
+            <li><span>21:20</span> Número especial de líderes</li>
+            <li><span>21:30</span> Número especial – Ministerio de Jóvenes</li>
+            <li><span>21:40</span> Número especial – Ministerio de Damas</li>
+            <li><span>21:50</span> Refrigerio</li>
+            <li><span>22:00</span> Oración final – Pastor César Flores</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+    <!-- DETALLE: 29 DE NOVIEMBRE -->
+    <div id="p29" class="detalle-programa" hidden>
+        <h3>29 de noviembre – Clausura</h3>
+        <p class="moderador">Moderador: Hno. Abel León</p>
+
+        <ol class="lista-horarios">
+            <li><span>07:30</span> Desayuno</li>
+            <li><span>09:00</span> Oración inicial – Hno. Abel León</li>
+            <li><span>09:05</span> Alabanza – Min. 70v7 Eco del Cielo</li>
+            <li><span>09:35</span> Lectura bíblica – Hna. Noemí López</li>
+            <li><span>09:45</span> Alabanza – Min. 70v7 Eco del Cielo</li>
+            <li><span>10:00</span> Palabra – Pastor Luis Fulguera</li>
+            <li>
+                <span>11:00</span>
+                Presentación de clases:
+                <ul class="lista-clases">
+                    <li>Adultos</li>
+                    <li>Jóvenes</li>
+                    <li>Redimidos</li>
+                    <li>Emanuel</li>
+                    <li>Elohim</li>
+                    <li>Joyitas</li>
+                </ul>
+            </li>
+            <li><span>11:40</span> Número especial de panderos</li>
+            <li><span>11:50</span> Almuerzo</li>
+            <li><span>11:50</span> Números especiales – Ministerio «MARANATHA»</li>
+            <li><span>12:00</span> Oración final – Hno. Abel León</li>
+        </ol>
+
+        <button class="volver" onclick="mostrarLista()">Volver a las fechas</button>
+    </div>
+
+</section>
+
+<section id="galeria" class="seccion">
+    <h2>Galería de recuerdos</h2>
+    <div class="linea-dorada"></div>
+    <p>Momentos especiales de nuestra congregación.</p>
+</section>
+
+</main>
+
+<footer>
+    <p>IGLESIA DE DIOS DE LA PROFECÍA</p>
+    <span>40 años de fe y bendición</span>
+</footer>
+
+<script>
+function mostrarPrograma(id) {
+    document.getElementById("lista-programas").hidden = true;
+
+    document.querySelectorAll(".detalle-programa").forEach(function(programa) {
+        programa.hidden = true;
+    });
+
+    document.getElementById(id).hidden = false;
+
+    document.getElementById("programa").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function mostrarLista() {
+    document.querySelectorAll(".detalle-programa").forEach(function(programa) {
+        programa.hidden = true;
+    });
+
+    document.getElementById("lista-programas").hidden = false;
+
+    document.getElementById("programa").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+</script>
+<script src="js/programa.js"></script>
+</body>
+</html>

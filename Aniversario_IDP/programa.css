@@ -1,0 +1,677 @@
+
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050914;
+    color: #f5f0e5;
+    font-family: Arial, sans-serif;
+}
+
+/* =================================
+   ENCABEZADO
+================================= */
+
+.encabezado {
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #071329, #101e37);
+    border-bottom: 1px solid #b99650;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.titulo {
+    text-align: left;
+}
+
+.titulo h1 {
+    font-family: Georgia, serif;
+    color: #e8c779;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.titulo p {
+    margin-top: 7px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.titulo span {
+    display: block;
+    margin-top: 7px;
+    color: #d6b76e;
+    font-style: italic;
+}
+
+/* =================================
+   MENÚ DE NAVEGACIÓN
+================================= */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px;
+    background: #091326;
+    border-bottom: 1px solid rgba(232, 199, 121, 0.3);
+}
+
+.menu a {
+    color: #e8c779;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+/* =================================
+   BIENVENIDA
+================================= */
+
+.bienvenida {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle, #172746, #050914 75%);
+}
+
+.bienvenida h2 {
+    color: #e8c779;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.bienvenida p {
+    max-width: 650px;
+    line-height: 1.8;
+    color: #d0d4dd;
+}
+
+/* =================================
+   SECCIONES GENERALES
+================================= */
+
+.seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.seccion h2 {
+    color: #e8c779;
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.linea-dorada {
+    width: 90px;
+    height: 3px;
+    margin: 18px auto 30px;
+    background: #c6a45d;
+}
+
+/* =================================
+   HISTORIA - DOCUMENTOS HISTÓRICOS
+================================= */
+
+.contenido-historia {
+    max-width: 900px;
+    margin: auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: #d0d4dd;
+    line-height: 1.9;
+    text-align: left;
+}
+
+.documento-historia {
+    margin-bottom: 30px;
+    padding: 35px;
+    background: linear-gradient(145deg, #101e37, #0b1426);
+    border: 1px solid rgba(198, 164, 93, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.numero-documento {
+    display: block;
+    margin-bottom: 15px;
+    color: #c6a45d;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.documento-historia h3 {
+    margin-bottom: 20px;
+    color: #e8c779;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.documento-historia h4 {
+    margin: 20px 0;
+    color: #e8c779;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.documento-historia p {
+    margin-bottom: 16px;
+    color: #d0d4dd;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.documento-historia strong {
+    color: #f0d58f;
+}
+
+.subtitulo-historia {
+    padding-top: 15px;
+    border-top: 1px solid rgba(198, 164, 93, 0.25);
+}
+
+.lista-historica {
+    margin: 10px 0 20px 25px;
+    padding-left: 10px;
+    color: #d0d4dd;
+}
+
+.lista-historica li {
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.nota-historica {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.fecha-historica {
+    margin-top: 25px;
+    color: #e8c779 !important;
+    font-weight: bold;
+    text-align: right !important;
+}
+
+.lista-pastores {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 20px 25px 20px 45px;
+    background: rgba(198, 164, 93, 0.07);
+    border-left: 3px solid #c6a45d;
+    border-radius: 5px;
+}
+
+.pastor-actual {
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #182b49, #10192b);
+    border: 1px solid #b99650;
+    border-radius: 10px;
+}
+
+.pastor-actual span {
+    color: #c6a45d;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.pastor-actual h4 {
+    margin: 8px 0 0;
+    font-family: Georgia, serif;
+    font-size: 23px;
+}
+
+.saludo-invitacion {
+    color: #e8c779 !important;
+    font-weight: bold;
+}
+
+.agradecimiento-invitacion {
+    margin-top: 25px !important;
+    color: #e8c779 !important;
+    font-weight: bold;
+    text-align: center !important;
+}
+
+/* =================================
+   PROGRAMA DE ACTIVIDADES
+================================= */
+
+.descripcion-programa {
+    color: #c5cad4;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+}
+
+/* TARJETAS DE FECHAS */
+
+.contenedor-fechas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta-evento {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-align: left;
+    padding: 22px;
+    background: linear-gradient(135deg, #101e37, #0b1426);
+    border: 1px solid rgba(198, 164, 93, 0.35);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.tarjeta-evento:hover {
+    transform: translateY(-5px);
+    border-color: #e8c779;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-evento.especial {
+    border-color: #b99650;
+    background: linear-gradient(135deg, #182b49, #10192b);
+}
+
+/* FECHA DORADA */
+
+.fecha {
+    min-width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(145deg, #e8c779, #a77e36);
+    color: #101727;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+/* INFORMACIÓN DE CADA TARJETA */
+
+.detalle-evento {
+    flex: 1;
+    min-width: 0;
+}
+
+.detalle-evento .dia {
+    color: #c6a45d;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.detalle-evento h3 {
+    color: #f5f0e5;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin: 7px 0 13px;
+}
+
+/* BOTONES */
+
+.detalle-evento button,
+.volver {
+    padding: 10px 17px;
+    background: linear-gradient(135deg, #e8c779, #b99650);
+    color: #101727;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.detalle-evento button:hover,
+.volver:hover {
+    background: #fff0bd;
+    transform: scale(1.04);
+}
+
+/* =================================
+   DETALLE DE CADA PROGRAMA
+================================= */
+
+.detalle-programa {
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background: linear-gradient(145deg, #101e37, #0b1426);
+    border: 1px solid #b99650;
+    border-radius: 12px;
+    text-align: left;
+    animation: aparecer 0.4s ease;
+}
+
+.detalle-programa[hidden],
+.contenedor-fechas[hidden] {
+    display: none !important;
+}
+
+.detalle-programa h3 {
+    color: #e8c779;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.moderador {
+    color: #d4bd82;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.lista-horarios {
+    list-style: none;
+    counter-reset: actividades;
+}
+
+.lista-horarios li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 14px 10px;
+    border-bottom: 1px solid rgba(198, 164, 93, 0.18);
+    color: #e0e3e9;
+    line-height: 1.6;
+    font-size: 14px;
+    min-width: 0;
+}
+
+.lista-horarios li span {
+    min-width: 100px;
+    flex-shrink: 0;
+    color: #e8c779;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.lista-clases {
+    margin: 10px 0 0 20px;
+    color: #d0d4dd;
+}
+
+.lista-clases li {
+    display: list-item;
+    padding: 3px;
+    border: none;
+}
+
+.subtitulo-programa {
+    color: #e8c779;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+.volver {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 25px;
+}
+
+/* =================================
+   ANIMACIÓN
+================================= */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =================================
+   PIE DE PÁGINA
+================================= */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #091326;
+    border-top: 1px solid #b99650;
+}
+
+footer p {
+    color: #e8c779;
+    letter-spacing: 2px;
+}
+
+footer span {
+    display: block;
+    margin-top: 10px;
+    color: #b8bdc8;
+    font-size: 13px;
+}
+
+/* =================================
+   ADAPTACIÓN PARA CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        min-height: 85px;
+        gap: 12px;
+        padding: 12px 15px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .titulo h1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .titulo p {
+        font-size: 9px;
+    }
+
+    .titulo span {
+        font-size: 11px;
+    }
+
+    .menu {
+        gap: 18px;
+        padding: 18px 10px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .bienvenida h2 {
+        font-size: 27px;
+    }
+
+    .seccion {
+        padding: 50px 18px;
+    }
+
+    .seccion h2 {
+        font-size: 25px;
+    }
+
+    /* HISTORIA */
+
+    .documento-historia {
+        padding: 22px 17px;
+        margin-bottom: 20px;
+    }
+
+    .documento-historia h3 {
+        font-size: 21px;
+    }
+
+    .documento-historia h4 {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .documento-historia p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .lista-historica {
+        margin-left: 15px;
+        padding-left: 10px;
+    }
+
+    .lista-historica li {
+        font-size: 13px;
+    }
+
+    .lista-pastores {
+        padding: 15px 15px 15px 35px;
+    }
+
+    .fecha-historica {
+        font-size: 12px !important;
+    }
+
+    /* PROGRAMA */
+
+    .contenedor-fechas {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tarjeta-evento {
+        padding: 17px 13px;
+        gap: 13px;
+    }
+
+    .fecha {
+        min-width: 65px;
+        height: 65px;
+        font-size: 14px;
+    }
+
+    .detalle-evento h3 {
+        font-size: 16px;
+    }
+
+    .detalle-evento button {
+        font-size: 12px;
+        padding: 9px 12px;
+    }
+
+    .detalle-programa {
+        padding: 18px 13px;
+    }
+
+    .detalle-programa h3 {
+        font-size: 21px;
+    }
+
+    .lista-horarios li {
+        gap: 9px;
+        padding: 12px 3px;
+        font-size: 13px;
+    }
+
+    .lista-horarios li span {
+        min-width: 85px;
+        font-size: 12px;
+    }
+}
+
+/* =================================
+   HISTORIA - NAVEGACIÓN
+================================= */
+
+.detalle-historia {
+    max-width: 850px;
+    margin: 30px auto 0;
+    animation: aparecer 0.4s ease;
+}
+
+.detalle-historia[hidden],
+#tarjetasHistoria[hidden] {
+    display: none !important;
+}
+
+#tarjetasHistoria .tarjeta-evento {
+    min-height: 145px;
+}
+
+#tarjetasHistoria .detalle-evento h3 {
+    line-height: 1.4;
+}
+
+.detalle-historia .volver {
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+
+    #tarjetasHistoria {
+        grid-template-columns: 1fr;
+    }
+
+    #tarjetasHistoria .tarjeta-evento {
+        min-height: 125px;
+    }
+
+    .detalle-historia {
+        margin-top: 20px;
+    }
+}
